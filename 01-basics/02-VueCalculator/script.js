@@ -28,8 +28,10 @@ const App = defineComponent({
             return this.answer.value = this.inpValue.firstInp - this.inpValue.secondInp
         }else if(this.mathOperation.operation === 'multiply'){
             return this.answer.value = this.inpValue.firstInp * this.inpValue.secondInp
-        }else{
+        }else if(this.mathOperation.operation === 'divide'){
             return this.answer.value =  this.inpValue.firstInp / this.inpValue.secondInp
+        }else{
+            return this.answer.value = NaN
         }
     }
   },
