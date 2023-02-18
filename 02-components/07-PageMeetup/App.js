@@ -21,7 +21,7 @@ export default defineComponent({
         </p>
       </div>
 
-      <PageMeetup :meetup-id="meetupId" />
+      <PageMeetup :meetupId="meetupId" />
     </div>
   `,
 });

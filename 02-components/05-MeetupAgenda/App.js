@@ -53,15 +53,15 @@ export default defineComponent({
       <h2>MeetupAgendaItem</h2>
       <h3>Регистрация</h3>
       <div>
-        <MeetupAgendaItem :agenda-item="agenda[0]" />
+        <MeetupAgendaItem :agendaItem="agenda[0]" />
       </div>
       <h3>Открытие (нестандартный заголовок)</h3>
       <div>
-        <MeetupAgendaItem :agenda-item="agenda[1]" />
+        <MeetupAgendaItem :agendaItem="agenda[1]" />
       </div>
       <h3>Доклад</h3>
       <div>
-        <MeetupAgendaItem :agenda-item="agenda[2]" />
+        <MeetupAgendaItem :agendaItem="agenda[2]" />
       </div>
 
       <h2>MeetupAgenda</h2>

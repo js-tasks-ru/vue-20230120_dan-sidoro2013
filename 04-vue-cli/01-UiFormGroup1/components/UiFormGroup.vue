@@ -1,14 +1,30 @@
 <template>
-  <div class="form-group">
+  <div class="form-group" v-bind:class="{ 'form-group_inline': checkStyle()}">
     <!-- form-group_inline -->
-    <label class="form-group__label">label text</label>
-    <!-- CONTENT -->
+    <label class="form-group__label">{{ this.$attrs.label }}</label>
+    <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
   name: 'UiFormGroup',
+
+  data(){
+    return {
+      isInline: false,
+    }
+  },
+
+  methods: {
+    checkStyle(){
+      if(this.$attrs.inline != undefined){
+        this.isInline = true;
+      }
+      return this.isInline
+    }
+  },
+
 };
 </script>
 

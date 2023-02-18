@@ -1,13 +1,23 @@
 <template>
-  <div class="meetup-cover">
-    <h1 class="meetup-cover__title">Title</h1>
+  <div class="meetup-cover" :style="{backgroundImage:`url(${image})`}">
+    <h1 class="meetup-cover__title">{{this.title}}</h1>
   </div>
 </template>
 
 <script>
 export default {
   name: 'MeetupCover',
-};
+  props: {
+    title : {
+      type: String,
+      required: true,
+    },
+    image : {
+      type: String,
+      required: true,
+    }
+  }
+}; 
 </script>
 
 <style scoped>
